@@ -19,7 +19,9 @@ const display = document.querySelector("#display")
 const numbers = document.querySelectorAll(".number")
 numbers.forEach((number) => {
     number.addEventListener("click", () => {
-        display.innerHTML = (number.innerHTML)
+        if (display.innerHTML.length < 10) {
+            display.innerHTML += (number.innerHTML)
+        }
     })
 })
 
