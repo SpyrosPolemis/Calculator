@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 10px;
+    height: 60%;
+    width: 50%;
+}
+
+#display {
+    background-color: beige;
+    height: 20%;
+}
+
+#keypad {
+    height: 75%;
+    display: flex;
+}
+
+#numbers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.number {
+    width: 33%;
+}
+
+#operators {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: stretch;
+}
+
+.operator {
+    height: 20%;
+}
