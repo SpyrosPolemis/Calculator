@@ -18,6 +18,9 @@ body {
 #display {
     background-color: beige;
     height: 20%;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 100px;
 }
 
 #keypad {
@@ -44,5 +47,5 @@ body {
 }
 
 .operator {
-    height: 20%;
+    flex-grow: 1;
 }

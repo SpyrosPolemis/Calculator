@@ -15,11 +15,16 @@ function divide (number1, number2) {
 }
 
 const display = document.querySelector("#display")
+const clearButton = document.querySelector("#clear");
+
+clearButton.addEventListener("click", () => {
+    display.innerHTML = "";
+})
 
 const numbers = document.querySelectorAll(".number")
 numbers.forEach((number) => {
     number.addEventListener("click", () => {
-        if (display.innerHTML.length < 10) {
+        if (display.innerHTML.length < 6) {
             display.innerHTML += (number.innerHTML)
         }
     })
